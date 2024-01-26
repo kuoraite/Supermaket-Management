@@ -26,3 +26,4 @@ C:\Users\kuora\Desktop\Supermarket\Supermarket\obj\Debug\net8.0\refint\Supermark
 C:\Users\kuora\Desktop\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.pdb
 C:\Users\kuora\Desktop\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.genruntimeconfig.cache
 C:\Users\kuora\Desktop\Supermarket\Supermarket\obj\Debug\net8.0\ref\Supermarket.dll
+C:\Users\kuora\Desktop\Supermarket\Supermarket\bin\Debug\net8.0\Supermarket.staticwebassets.runtime.json
