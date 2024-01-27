@@ -7,7 +7,8 @@ namespace Supermarket.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var categories = CategoriesRepository.GetCategories();
+            return View(categories);
         }
 
         public IActionResult Edit(int? id)
