@@ -29,5 +29,25 @@ namespace Supermarket.Controllers
 
             return View(category);
         }
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Add(Category category) 
+        { 
+            if (ModelState.IsValid)
+            {
+                CategoriesRepository.AddCategory(category);
+                return RedirectToAction(nameof(Index));
+            }
+
+            /*Nenurodoma i kuri view eiti todel einama i Edit, o paduodame category, kad butu
+             * matoma netinkamai irasyta informacija pacioje formoje */
+            return View(category);
+        }
     }
 }
