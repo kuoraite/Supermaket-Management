@@ -49,5 +49,12 @@ namespace Supermarket.Controllers
              * matoma netinkamai irasyta informacija pacioje formoje */
             return View(category);
         }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            CategoriesRepository.DeleteCategory(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

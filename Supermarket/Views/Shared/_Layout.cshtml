@@ -37,6 +37,8 @@
                 @RenderBody()
             </div>
         </div>
+        <!-- Cia naudojama async, nes nemazai script kuri reik surenderint todel async pagerins performance -->
+        @await RenderSectionAsync("Scripts", required: false)
     </body>
 
 </html>
